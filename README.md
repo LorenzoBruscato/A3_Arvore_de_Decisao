@@ -99,13 +99,13 @@ source venv/bin/activate
 ### Instalar dependências
 
 ```bash
-pip install numpy matplotlib scipy scikit-fuzzy networkx
+pip install pandas scikit-learn matplotlib
 ```
 
 ### Mover o arquivo para dentro do ambiente virtual
 
 ```bash
-mv Logica_de_Fuzzy_Ventilador.py venv/
+mv Diagnostico.py venv/
 ```
 
 ### Entrar na pasta do ambiente virtual
@@ -117,7 +117,7 @@ cd venv
 ### Executar o programa
 
 ```bash
-python3 Logica_de_Fuzzy_Ventilador.py
+python3 Diagnostico.py
 ```
 
 ---
@@ -147,7 +147,7 @@ PowerShell:
 ### Instalar dependências
 
 ```cmd
-pip install numpy matplotlib scipy scikit-fuzzy networkx
+pip install pandas scikit-learn matplotlib
 ```
 
 ### Mover o arquivo para dentro do ambiente virtual
@@ -155,27 +155,8 @@ pip install numpy matplotlib scipy scikit-fuzzy networkx
 Prompt de Comando:
 
 ```cmd
-move Logica_de_Fuzzy_Ventilador.py venv\
+move Diagnostico.py venv\
 ```
-
-PowerShell:
-
-```powershell
-Move-Item Logica_de_Fuzzy_Ventilador.py venv\
-```
-
-### Entrar na pasta do ambiente virtual
-
-```cmd
-cd venv
-```
-
-### Executar o programa
-
-```cmd
-python Logica_de_Fuzzy_Ventilador.py
-```
-
 
 ---
 
