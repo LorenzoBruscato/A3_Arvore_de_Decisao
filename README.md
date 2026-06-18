@@ -84,67 +84,98 @@ profissionais.
 
 ## Linux
 
-### 1. Clonar o repositório
+### Criar ambiente virtual
 
-git clone https://github.com/LorenzoBruscato/A3_Arvore_de_Decisao.git
-
-### 2. Entrar na pasta
-
-cd A3_Arvore_de_Decisao
-
-### 3. Criar ambiente virtual
-
+```bash
 python3 -m venv venv
+```
 
-### 4. Ativar ambiente virtual
+### Ativar ambiente virtual
 
+```bash
 source venv/bin/activate
+```
 
-### 5. Instalar dependências
+### Instalar dependências
 
-pip install pandas scikit-learn matplotlib
+```bash
+pip install numpy matplotlib scipy scikit-fuzzy networkx
+```
 
-### 6. Executar os programas
+### Mover o arquivo para dentro do ambiente virtual
 
-python3 Diagnostico_Doencas.py
+```bash
+mv Logica_de_Fuzzy_Ventilador.py venv/
+```
 
-python3 Previsao_Turnover.py
+### Entrar na pasta do ambiente virtual
+
+```bash
+cd venv
+```
+
+### Executar o programa
+
+```bash
+python3 Logica_de_Fuzzy_Ventilador.py
+```
 
 ---
 
 ## Windows
 
-### 1. Clonar o repositório
+### Criar ambiente virtual
 
-git clone https://github.com/LorenzoBruscato/A3_Arvore_de_Decisao.git
-
-### 2. Entrar na pasta
-
-cd A3_Arvore_de_Decisao
-
-### 3. Criar ambiente virtual
-
+```cmd
 python -m venv venv
+```
 
-### 4. Ativar ambiente virtual
+### Ativar ambiente virtual
 
 Prompt de Comando:
 
+```cmd
 venv\Scripts\activate.bat
+```
 
 PowerShell:
 
+```powershell
 .\venv\Scripts\Activate.ps1
+```
 
-### 5. Instalar dependências
+### Instalar dependências
 
-pip install pandas scikit-learn matplotlib
+```cmd
+pip install numpy matplotlib scipy scikit-fuzzy networkx
+```
 
-### 6. Executar os programas
+### Mover o arquivo para dentro do ambiente virtual
 
-python Diagnostico_Doencas.py
+Prompt de Comando:
 
-python Previsao_Turnover.py
+```cmd
+move Logica_de_Fuzzy_Ventilador.py venv\
+```
+
+PowerShell:
+
+```powershell
+Move-Item Logica_de_Fuzzy_Ventilador.py venv\
+```
+
+### Entrar na pasta do ambiente virtual
+
+```cmd
+cd venv
+```
+
+### Executar o programa
+
+```cmd
+python Logica_de_Fuzzy_Ventilador.py
+```
+
 
 ---
 
